@@ -8,9 +8,9 @@ public class AlumnoG{
     nombre = ""
     telefono = 123456789;
     edad = 0
-    nota1 = (int)(10*Math.random());
-    nota2 = (int)(10*Math.random());
-    nota3 = (int)(10*Math.random());
+    nota1 = 0;
+    nota2 = 0;
+    nota3 = 0;
   }
   public void AlumnoDatos(){
     Scanner sc = new Scanner(System.in);
@@ -20,6 +20,9 @@ public class AlumnoG{
     edad = sc.nextInt();
     System.out.println("Teléfono del aluno: ");
     telefono = sc.nextInt();
+    nota1 = (int)(10*Math.random());
+    nota2 = (int)(10*Math.random());
+    nota3 = (int)(10*Math.random());
   }
   public void AlumnoPrint(){
     System.out.println("Nombre: " + nombre + "\nEdad: " + edad + "\nNota1: " + nota1 + "\nNota2: " + nota2 + "\nNota 3: " + nota3);
