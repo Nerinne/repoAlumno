@@ -2,12 +2,11 @@ import java.util.Scanner;
 
 public class AlumnoG{
   public String nombre;
-  public int telefono, edad, nota1, nota2, nota3;
+  public int telefono, nota1, nota2, nota3;
   
   AlumnoG{
     nombre = ""
     telefono = 123456789;
-    edad = 0
     nota1 = 0;
     nota2 = 0;
     nota3 = 0;
@@ -16,8 +15,6 @@ public class AlumnoG{
     Scanner sc = new Scanner(System.in);
     System.out.println("Nombre del aluno: ");
     nombre = sc.nextLine();
-    System.out.println("Edad del aluno: ");
-    edad = sc.nextInt();
     System.out.println("Teléfono del aluno: ");
     telefono = sc.nextInt();
     nota1 = (int)(10*Math.random());
